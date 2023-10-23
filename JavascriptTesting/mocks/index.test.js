@@ -3,18 +3,18 @@ const File = require("./src/file");
 const { rejects, deepStrictEqual } = require("node:assert");
 
 (async () => {
-  // {
-  //   const filePath = './files/emptyFileInvalid.csv'
-  //   const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE)
-  //   const result = File.csvToJson(filePath)
-  //   await rejects(result, rejection)
-  // }
-  // {
-  //   const filePath = './files/fourItemsInvalid.csv'
-  //   const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE)
-  //   const result = File.csvToJson(filePath)
-  //   await rejects(result, rejection)
-  // }
+  {
+    const filePath = './files/emptyFileInvalid.csv'
+    const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE)
+    const result = File.csvToJson(filePath)
+    await rejects(result, rejection)
+  }
+  {
+    const filePath = './files/fourItemsInvalid.csv'
+    const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE)
+    const result = File.csvToJson(filePath)
+    await rejects(result, rejection)
+  }
   {
     const filePath = './files/threeItemsValid.csv'
     const result = await File.csvToJson(filePath)

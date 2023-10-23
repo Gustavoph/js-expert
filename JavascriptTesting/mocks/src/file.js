@@ -24,23 +24,13 @@ class File {
     const [header, ...content] = csvString.split('\n')
     const isHeaderValid = header === options.fields.join(',')
 
-    if(!isHeaderValid) {
-      return {
-        valid: false,
-        error: error.FILE_FIELDS_ERROR_MESSAGE
-      }
-    }
+    if(!isHeaderValid) return { valid: false, error: error.FILE_FIELDS_ERROR_MESSAGE }
 
     const isContentLengthAccepted = (
       content.length > 0 &&
       content.length <= options.maxLines
     )
-    if(!isContentLengthAccepted) {
-      return {
-        valid: false,
-        error: error.FILE_LENGTH_ERROR_MESSAGE
-      }
-    }
+    if(!isContentLengthAccepted) return { valid: false, error: error.FILE_LENGTH_ERROR_MESSAGE }
 
     return { valid: true }
   }
