@@ -6,7 +6,6 @@ import { faker, simpleFaker }  from '@faker-js/faker'
 import { Car, Category, Customer } from '../../entities/index.js'
 
 const seederBaseFolder = path.join(path.resolve(), 'src/', 'infra/', 'database')
-console.log(path.resolve())
 const ITEMS_AMOUNT = 2
 
 const category = new Category({
