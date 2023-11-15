@@ -1,0 +1,17 @@
+https://regex101.com/ -> site que valida e explica regex
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.123.123-12
+321.123.123-23
+321.123.123-23
+
+replace [.-] - vazio
+
+Gustavo, Oliveira
+Giovanna, Alcini
+
+^(\w+),\s(\w+)$ -> regex
+{"firstName": "$1", "lastName": "$2"} -> replace
+
+{"firstName": "Gustavo", "lastName": "Oliveira"}
+{"firstName": "Giovanna", "lastName": "Alcini"}
