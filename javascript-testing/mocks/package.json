@@ -1,0 +1,16 @@
+{
+  "name": "mocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/index.spec.js"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "keywords": [],
+  "author": "Gustavo Oliveira",
+  "license": "ISC"
+}
