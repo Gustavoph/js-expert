@@ -1,0 +1,1 @@
+curl -X POST --data '{"name":"gustavo","password":"123456Ab"}' localhost:3333/login
