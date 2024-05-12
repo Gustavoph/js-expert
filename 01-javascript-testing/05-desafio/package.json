@@ -1,0 +1,23 @@
+{
+  "name": "05-desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "seed": "node ./seed",
+    "test:dev": "npx mocha -w --parallel **/**/*.test.js",
+    "test": "npx mocha **/**/*.test.js",
+    "test:cov": "npx nyc npx mocha --parallel **/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^17.0.2"
+  }
+}
