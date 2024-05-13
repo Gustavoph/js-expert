@@ -17,6 +17,7 @@ export class CarService {
     const listLength = list.length
     return Math.floor(Math.random() * (listLength))
   }
+  
   chooseRandomCar(category) {
     const randomCarIndex = this.getRandomPositionFromArray(category.carIds)
     const carId = category.carIds[randomCarIndex]
